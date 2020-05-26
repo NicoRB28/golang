@@ -2,21 +2,21 @@ package main
 
 import "fmt"
 
-func half(a int) (int, bool) {
+func half(a float64) (float64, bool) {
 
 	b := (a / 2)
-	c := a%2 == 0
+	c := int(a)%2 == 0
 	return b, c
 }
 
 func main() {
 
-	var number int
+	var number float64
 	fmt.Println(`numero:`)
 	fmt.Scan(&number)
 
 	b, c := half(number)
 
-	fmt.Printf("el numero: %d dividido 2 es igual a: %d y era par? %t", number, b, c)
+	fmt.Printf("el numero: %d dividido 2 es igual a: %.2f y era par? %t", int(number), b, c)
 
 }
