@@ -15,6 +15,7 @@ func main() {
 
 	slice = append(slice[:1], slice[4:]...)
 	//elimina el 2,3 y 4
+	//el comando [a:b] toma desde a (inclusive) hasta b(no inclusive)
 	fmt.Println(slice)
 
 }
