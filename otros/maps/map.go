@@ -44,4 +44,15 @@ func main() {
 		fmt.Println(key, ":", value)
 	}
 
+	// para eliminar del map: delete(map, key)
+	delete(m, 2)
+	fmt.Println(m)
+	//pero tambien se puede mandar una key que no este en el map por eso es mejor verificar que exista
+	if value, ok := m[2]; ok {
+		fmt.Println(value)
+		delete(m, 2)
+	} else {
+		fmt.Println("el key", 2, " no existe en el map")
+	}
+
 }
