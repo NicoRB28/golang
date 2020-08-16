@@ -16,6 +16,7 @@ type secretAgent struct {
 func main() {
 	p1 := secretAgent{
 		person: person{
+			//estos atributos se promueven a secretAgent, no hace falta poner p1.person.first, con p1.first es suficiente
 			first: "James",
 			last:  "Bond",
 			age:   32,
