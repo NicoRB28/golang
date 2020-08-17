@@ -24,4 +24,5 @@ func bar(y *int) {
 	fmt.Println(*y) // ==> print 0
 	*y = 500        // ==> aca asigno el valor 500 en la celda referenciada
 	fmt.Println(*y) // ==> print 500
+
 }
